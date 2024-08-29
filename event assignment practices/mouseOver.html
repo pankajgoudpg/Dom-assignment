@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseOver</title>
+    <style>
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+#box{
+    width: 20rem;
+    background-color: brown;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>Restricted Area</p>
+    </div>
+
+    <script>
+     const boxElement = document.getElementById("box");
+          boxElement.addEventListener("mouseover",function(){
+            alert("you entered in restricted area(mouse over event is working properly)");
+          });
+    </script>
+</body>
+</html>

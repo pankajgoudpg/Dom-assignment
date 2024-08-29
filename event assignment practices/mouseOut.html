@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseOut</title>
+    <style>
+body{
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#box{
+    font-size: 25px;
+    background-color:aqua;
+    width: 20rem;
+    text-align:center;
+    border-radius: 5px;
+    cursor:pointer;
+}
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>Restricted Area</p>
+    </div>
+
+    <script>
+ const boxElement = document.getElementById("box");
+boxElement.addEventListener("mouseout",function(){
+    alert("you are so good and mouseOut function work");
+});
+
+    </script>
+</body>
+</html>
